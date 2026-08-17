@@ -1,4 +1,3 @@
-cat > report.js << 'EOF'
 const puppeteer = require('puppeteer-core');
 const chalk = require('chalk');
 const gradient = require('gradient-string');
@@ -83,4 +82,3 @@ rl.question(chalk.yellow('📱 Nomor target (62xxx): '), async (target) => {
     await page.waitForTimeout(2000 + Math.random() * 2000);
   }
 });
-EOF
